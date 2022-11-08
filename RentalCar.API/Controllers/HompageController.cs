@@ -19,7 +19,6 @@ namespace RentalCar.API.Controllers
             _mapper = mapper;
             _CarService = CarService;
         }
-        [Authorize(Roles = "renter")]
         [HttpGet]
         public ActionResult<List<CarView>> Homepage()
         {
